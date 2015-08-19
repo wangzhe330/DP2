@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <!-- 放置选择的listview -->
+
+    <RelativeLayout
+        android:id="@+id/plan_select"
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content">
+
+
+            <LinearLayout                 
+                android:id="@+id/plan_select_item_food"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentTop="true"
+                >
+                <ImageView 
+                    android:id="@+id/plan_select_item_food_icon"
+                    android:layout_width="50dp"                    
+                    android:layout_height="wrap_content" 
+                    android:padding="5dp"
+                    android:src="@drawable/plan_select_food_icon"                   
+                    />
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    android:text="吃饭"
+                    />
+                <Spinner 
+                    android:id="@+id/plan_select_item_food_spinner"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/food"                    
+                    />
+                <ImageButton 
+                    android:id="@+id/plan_select_item_food_del"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="7dp"
+                    android:src="@drawable/plan_select_item_del"
+                    android:background="#00000000"
+                    />
+                <ImageButton 
+                    android:id="@+id/plan_select_item_food_up"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="7dp"
+                    android:src="@drawable/plan_select_item_up"
+                    android:background="#00000000"
+                    />
+                <ImageButton 
+                    android:id="@+id/plan_select_item_food_down"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="7dp"
+                    android:src="@drawable/plan_select_item_down"
+                    android:background="#00000000"
+                    />
+                <ImageButton 
+                    android:id="@+id/plan_select_item_food_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="7dp"
+                    android:src="@drawable/plan_select_item_add"
+                    android:background="#00000000"
+                    />
+            </LinearLayout>
+
+			<View
+			   android:id="@+id/plan_divline_0"  
+			   android:layout_width="fill_parent"  
+			   android:layout_height="2dp"  
+			   android:background="?android:attr/listDivider"
+			   android:layout_below="@id/plan_select_item_food"
+			   />  
+            <LinearLayout 
+                android:id="@+id/plan_select_item_movie"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/plan_divline_0"
+                >
+                <ImageView 
+                    android:id="@+id/plan_select_item_movie_icon"
+                    
+                    android:layout_height="wrap_content"
+                    android:layout_width="50dp" 
+                    android:padding="5dp"
+                    android:src="@drawable/plan_select_moive_icon"                    
+                    />
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    android:text="电影"
+                    />
+                <Spinner 
+                    android:id="@+id/plan_select_item_movie_spinner"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible"
+                    />
+                <ImageButton 
+                    android:id="@+id/plan_select_item_movie_del"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="7dp"
+                    android:src="@drawable/plan_select_item_del"
+                    android:background="#00000000"
+                    />
+                <ImageButton 
+                    android:id="@+id/plan_select_item_movie_up"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="7dp"
+                    android:src="@drawable/plan_select_item_up"
+                    android:background="#00000000"
+                    />
+				<ImageButton 
+                    android:id="@+id/plan_select_item_movie_down"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="7dp"
+                    android:src="@drawable/plan_select_item_down"
+                    android:background="#00000000"
+                    />
+                <ImageButton 
+                    android:id="@+id/plan_select_item_movie_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="7dp"
+                    android:src="@drawable/plan_select_item_add"
+                    android:background="#00000000"
+                    />                
+            </LinearLayout>
+			<View
+			   android:id="@+id/plan_divline_1"  
+			   android:layout_width="fill_parent"  
+			   android:layout_height="2dp"  
+			   android:background="?android:attr/listDivider" 
+			   android:layout_below="@id/plan_select_item_movie"			   
+			   />              
+            <LinearLayout 
+                android:id="@+id/plan_select_item_ktv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/plan_divline_1"
+                >
+                <ImageView 
+                    android:id="@+id/plan_select_item_ktv_icon"
+  
+                    android:layout_height="wrap_content"
+                    android:layout_width="50dp"  
+                    android:padding="5dp"
+                    android:src="@drawable/plan_select_ktv_icon"                   
+                    />
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:text="KTV"
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    />
+                <Spinner 
+                    android:id="@+id/plan_select_item_ktv_spinner"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible"
+                    />
+                <ImageButton 
+                    android:id="@+id/plan_select_item_ktv_del"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="7dp"
+                    android:src="@drawable/plan_select_item_del"
+                    android:background="#00000000"
+                    />
+                <ImageButton 
+                    android:id="@+id/plan_select_item_ktv_up"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="7dp"
+                    android:src="@drawable/plan_select_item_up"
+                    android:background="#00000000"
+                    />
+				<ImageButton 
+                    android:id="@+id/plan_select_item_ktv_down"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="7dp"
+                    android:src="@drawable/plan_select_item_down"
+                    android:background="#00000000"
+                    />
+                <ImageButton 
+                    android:id="@+id/plan_select_item_ktv_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="7dp"
+                    android:src="@drawable/plan_select_item_add"
+                    android:background="#00000000"
+                    />                     
+            </LinearLayout>                       
+			<View
+			   android:id="@+id/plan_divline_2"  
+			   android:layout_width="fill_parent"  
+			   android:layout_height="2dp"  
+			   android:background="?android:attr/listDivider" 
+			   android:layout_below="@id/plan_select_item_ktv"
+			   />              
+            <LinearLayout 
+                android:id="@+id/plan_select_item_hotel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/plan_divline_2"
+                >
+                <ImageView 
+                    android:id="@+id/plan_select_item_hotel_icon"
+    
+                    android:layout_height="wrap_content" 
+                    android:layout_width="50dp"  
+                    android:padding="5dp"
+                    android:src="@drawable/plan_select_hotel_icon"                  
+                    />
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:text="住宿"
+                    android:textSize="20dp"
+                    android:gravity="center"
+                    />
+                <Spinner 
+                    android:id="@+id/plan_select_item_hotel_spinner"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"/>
+                
+                <ImageButton 
+                    android:id="@+id/plan_select_item_hotel_del"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="7dp"
+                    android:src="@drawable/plan_select_item_del"
+                    android:background="#00000000"
+                    />
+                <ImageButton 
+                    android:id="@+id/plan_select_item_hotel_up"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="7dp"
+                    android:src="@drawable/plan_select_item_up"
+                    android:background="#00000000"
+                    />
+				<ImageButton 
+                    android:id="@+id/plan_select_item_hotel_down"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="7dp"
+                    android:src="@drawable/plan_select_item_down"
+                    android:background="#00000000"
+                    />
+                <ImageButton 
+                    android:id="@+id/plan_select_item_hotel_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="7dp"
+                    android:src="@drawable/plan_select_item_add"
+                    android:background="#00000000"
+                    />                     
+            </LinearLayout> 
+            
+			<View
+			   android:id="@+id/plan_divline_3"  
+			   android:layout_width="fill_parent"  
+			   android:layout_height="2dp"  
+			   android:background="?android:attr/listDivider" 
+			   android:layout_below="@id/plan_select_item_hotel"
+			   />  
+        
+        <ListView
+            android:layout_below="@id/plan_divline_3"
+            android:id="@+id/plan_select_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="180dp"
+            android:divider="#b5b5b5"
+            android:dividerHeight="1dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/plan_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/plan_select" >
+
+        <LinearLayout
+            android:id="@+id/time_show"
+            android:layout_width="200dip"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp" >
+
+            <!--
+	          android:layout_centerHorizontal="true"
+	          因为这句 使得保持在了父亲控件的中心，但是长度变化的时候，就会左右晃动
+            -->
+
+            <TextView
+                android:id="@+id/plan_tv_0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="活动时间：" />
+
+            <TextView
+                android:id="@+id/plan_minValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10：00" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" - " />
+
+            <TextView
+                android:id="@+id/plan_maxValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12:00" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/seekbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/time_show"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp" />
+    </RelativeLayout>
+    
+    <Button
+        android:id="@+id/plan_test_button"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/plan_time"
+        android:layout_height="wrap_content"
+        android:text="提交"/>
+
+
+
+</RelativeLayout>

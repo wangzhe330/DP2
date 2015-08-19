@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:layout_width="fill_parent"  
+    android:layout_height="wrap_content"  
+    android:background="@drawable/list_selector"  
+    android:orientation="horizontal"  
+    android:padding="5dip" >  
+    
+    <ImageView       
+	    android:id="@+id/plan_select_raw_iv_icon"     
+	    android:layout_width="150dip"  
+	    android:layout_height="90dip"
+	    android:scaleType="fitXY" 
+	    android:adjustViewBounds="true"    
+	    android:src="@drawable/iamge_wait"/>  
+
+    <TextView 
+        android:id="@+id/plan_select_raw_tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/plan_select_raw_iv_icon"        
+        />
+    <Spinner 
+        android:id="@+id/plan_select_raw_sp"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/plan_select_raw_tv_name"               
+        />
+    <CheckBox 
+        android:id="@+id/plan_select_raw_cb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/plan_select_raw_sp"              
+        />
+    <Button 
+        android:id="@+id/plan_select_raw_btn_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/plan_select_raw_cb"      
+        />
+    <Button 
+        android:id="@+id/plan_select_raw_btn_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/plan_select_raw_btn_up"
+        />
+</RelativeLayout>

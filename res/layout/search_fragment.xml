@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:paddingBottom="50dp"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
+    
+    <RelativeLayout android:id="@+id/search_top"
+    	android:layout_width="fill_parent"
+    	android:layout_alignParentTop="true"
+    	android:paddingLeft="10dp"
+    	android:paddingRight="10dp"
+    	android:background="@drawable/top_background"
+    	android:layout_height="wrap_content">
+    	
+        <Button android:id="@+id/btnSearch"
+        	android:layout_width="50dp"
+        	android:layout_height="27dp"
+        	android:gravity="center"
+        	android:layout_centerVertical="true"
+        	android:layout_alignParentRight="true"
+        	android:textSize="12sp"
+        	android:textStyle="bold"
+        	android:background="@drawable/search_bar_btn"
+        	android:text="搜索"/>
+        
+        <RelativeLayout android:id="@+id/rlSearchFrameDelete"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+        	android:layout_centerVertical="true"
+			android:gravity="center_vertical"
+            android:layout_toLeftOf="@id/btnSearch">
+            
+            
+		    	<EditText android:id="@+id/etSearch"
+		        	android:layout_width="fill_parent"
+		        	android:layout_height="wrap_content"
+					android:singleLine="true"
+		        	android:background="@drawable/search_frame"
+		        	android:layout_marginRight="10dp"
+		        	android:paddingLeft="32dp"
+		        	android:textSize="12sp"
+		        	android:hint=""/>
+		    	
+		    	<ImageView android:id="@+id/ivDeleteText"
+		    	    android:layout_width="wrap_content"
+		    	    android:layout_height="wrap_content"
+		    	    android:layout_alignParentRight="true"
+		    	    android:src="@drawable/delete"
+		    	    android:layout_centerInParent="true"
+		    	    android:paddingRight="20dp"
+		    	    android:visibility="gone"/>
+            
+        </RelativeLayout>
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/spinnerArray"
+        android:layout_below="@id/search_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"        
+        >
+        
+        <!-- 
+        <Spinner 
+		    android:id="@+id/spinner1"
+		    android:layout_width="120dp"
+		    android:layout_height="wrap_content"
+		    android:entries="@array/food"
+		    android:layout_centerHorizontal="true"
+		    />
+        
+        <Spinner 
+		    android:id="@+id/spinner0"
+		    android:layout_width="0dp"
+		    android:layout_height="wrap_content"
+		    android:entries="@array/distance"
+		    android:layout_alignParentLeft="true"
+		     android:layout_toLeftOf="@id/spinner1"
+		    />
+		
+		<Spinner 
+		    android:id="@+id/spinner2"
+		    android:layout_width="0dp"
+		    android:layout_height="wrap_content"
+		    android:entries="@array/degree"
+		    android:layout_alignParentRight="true"
+		    android:layout_toRightOf="@id/spinner1"
+		    />
+		     -->
+
+    </RelativeLayout>
+
+	
+	<ListView
+	    android:layout_below="@id/spinnerArray"
+        android:id="@+id/search_result_list"  
+        android:layout_width="fill_parent"  
+        android:layout_height="wrap_content"  
+        android:divider="#b5b5b5"  
+        android:dividerHeight="1dp"         
+        />  
+   
+    
+</RelativeLayout>

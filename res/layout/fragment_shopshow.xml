@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout android:id="@+id/shopshow_shop_info"   
+        android:layout_width="fill_parent"  
+        android:layout_height="wrap_content"  
+        android:layout_alignParentLeft="true"
+        android:padding="3dip"
+        android:background="@drawable/image_bg"> 
+        
+        <ImageView       
+            android:id="@+id/shopshow_shop_image"     
+            android:layout_width="90dip"  
+            android:layout_height="55dip"
+            android:scaleType="fitXY" 
+            android:adjustViewBounds="true"    
+            android:src="@drawable/iamge_wait"/>  
+      
+        <!-- 商家名称 -->
+	    <TextView  
+	        android:id="@+id/shopshow_shop_name"  
+	        android:layout_width="wrap_content"  
+	        android:layout_height="wrap_content"  
+	        android:layout_alignTop="@+id/shopshow_shop_image"  
+	        android:layout_toRightOf="@+id/shopshow_shop_image"    
+	        android:textColor="#040404"  
+	        android:typeface="sans"   
+	        android:textSize="15dip"  
+	        android:layout_marginLeft="5dip"
+	        android:textStyle="bold"/>  
+  
+    	<!-- 地点-->  
+	    <TextView  
+	        android:id="@+id/shopshow_shop_location"  
+	        android:layout_width="wrap_content"  
+	        android:layout_height="wrap_content"  
+	        android:layout_below="@id/shopshow_shop_name"  
+	        android:layout_toRightOf="@+id/shopshow_shop_image"
+	        android:textColor="#343434"  
+	        android:textSize="10sp"  
+	        android:layout_marginLeft="5dip"
+	        android:layout_marginTop="1dip"/>  
+        
+	    <!--电话-->  
+	    <TextView  
+	        android:id="@+id/shopshow_shop_tel"  
+	        android:layout_width="wrap_content"  
+	        android:layout_height="wrap_content"  
+	        android:layout_below="@id/shopshow_shop_location" 
+	        android:layout_toRightOf="@+id/shopshow_shop_image" 
+	        android:textColor="#343434"  
+	        android:textSize="10sp"  
+	        android:layout_marginLeft="5dip"
+	        android:layout_marginTop="1dip"/>
+	    
+	    <Button 
+	        android:id="@+id/shopshow_location_btn"
+	        android:layout_width="20dip"
+	        android:layout_height="31dip"
+	        android:layout_marginTop="12dip"
+	        android:layout_marginRight="4dip"
+	        android:layout_alignTop="@+id/shopshow_shop_image"
+	        android:layout_alignParentRight="true"
+	        android:background="@drawable/shoplocation_icon"/>
+    </RelativeLayout>
+    
+	<ExpandableListView 
+	    android:id="@+id/detail_FilmInfo"
+	    android:layout_width="fill_parent"
+	    android:layout_height="0dp"
+	    android:groupIndicator="@null"
+	    android:layout_weight="2"
+	    android:drawSelectorOnTop="false"
+	    android:divider="#b5b5b5"  
+        android:dividerHeight="1dp">
+	</ExpandableListView>
+    
+</LinearLayout>

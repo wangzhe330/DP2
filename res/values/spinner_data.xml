@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources> 
+	
+	<string-array name="distance">
+	    <item>100m</item>  
+	    <item>500m</item>  
+	    <item>1km</item>  
+	    <item>10km</item>  
+	</string-array>
+	
+	<string-array name="degree">
+	    <item>1</item>  
+	    <item>2</item>  
+	    <item>3</item>  
+	    <item>4</item>  
+	</string-array>
+	
+	<string-array name="food">
+	    <item>川菜</item>  
+	    <item>粤菜</item>  
+	    <item>本帮江浙菜</item>  
+	    <item>火锅</item>  
+	    <item>自助餐</item>
+	    <item>清真菜</item>
+	    <item>素菜</item>
+	    <item>东北菜</item>
+	    <item>台湾菜</item>
+	    <item>湘菜</item>
+	    <item>贵州菜</item>
+	    <item>面包甜点</item>
+	    <item>豫菜</item>
+	    <item>西餐</item>
+	    <item>东南亚菜</item>
+	    <item>韩国料理</item>
+	    <item>日本</item>
+	    <item>小吃快餐</item>
+	    <item>新疆菜</item>
+	    <item>咖啡厅</item>
+	    <item>热门美食</item>
+	    <item>螺蛳粉</item>
+	    
+	  	<item>外卖</item>
+	    <item>更多美食</item>
+	    <item>海鲜</item>
+	    <item>云南菜</item>
+	    <item>更多亚洲菜</item>
+	    <item>青海菜</item>
+	</string-array>
+	
+<string-array name="hotel">
+    	<item>100</item>
+	  	<item>200</item>
+	    <item>500</item>
+	    <item>800</item>
+	</string-array>		
+		
+</resources>

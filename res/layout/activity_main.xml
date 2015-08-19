@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dp2.MainActivity" >
+
+   
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world" />
+    
+    <RelativeLayout
+        android:id="@+id/aboveLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+        
+        
+
+        <RelativeLayout
+            android:id="@+id/main_relativeLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#dbdbdb"
+            android:orientation="vertical" >
+
+           	<LinearLayout
+	            android:id="@+id/fragmentRoot"
+	            android:orientation = "vertical"
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent" />
+
+            <LinearLayout
+                android:id="@+id/bottomList"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@color/pink"
+                android:orientation="horizontal" >
+				<RadioGroup
+				    android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:orientation="horizontal" >
+                    <RadioButton
+                        android:id="@+id/rbFind"
+                        style="@style/radioStyle"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:background="@drawable/selector_common"
+                        android:drawableTop="@drawable/nav_find_res"
+                        android:paddingTop="8dp"
+                        android:text="发现" />				
+                    <RadioButton
+                        android:id="@+id/rbSearch"
+                        style="@style/radioStyle"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_common"
+                        android:drawableTop="@drawable/nav_search_res"
+                        android:paddingTop="8dp"
+                        android:text="搜索" />
+                    <RadioButton
+                        android:id="@+id/rbPlan"
+                        style="@style/radioStyle"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_common"
+                        android:drawableTop="@drawable/nav_plan_res"
+                        android:paddingTop="8dp"
+                        android:text="行程" />
+                    <RadioButton
+                        android:id="@+id/rbMe"
+                        style="@style/radioStyle"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_common"
+                        android:drawableTop="@drawable/nav_me_res"
+                        android:paddingTop="8dp"
+                        android:text="我的" />
+
+                	</RadioGroup>
+                </LinearLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+    
+</RelativeLayout>

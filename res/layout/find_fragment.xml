@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+     >
+ 
+
+<LinearLayout
+    android:id="@+id/find_top"
+    android:layout_width="fill_parent"
+    android:layout_height="140dp"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="140dp" >
+
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            >
+            
+	       	<android.support.v4.view.ViewPager
+				android:id="@+id/vp"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" /> 
+    	</LinearLayout>
+        
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="35dip"
+            android:layout_gravity="bottom"
+            android:background="#33000000"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="中国家庭院校园区域名字体现"
+                android:textColor="#ffffff" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dip"
+                android:gravity="center" >
+
+                <View
+                    android:id="@+id/v_dot0"
+                    style="@style/dot_style"
+                    android:background="@drawable/dot_focused" />
+
+                <View
+                    android:id="@+id/v_dot1"
+                    style="@style/dot_style" />
+
+                <View
+                    android:id="@+id/v_dot2"
+                    style="@style/dot_style" />
+
+                <View
+                    android:id="@+id/v_dot3"
+                    style="@style/dot_style" />
+
+                <View
+                    android:id="@+id/v_dot4"
+                    style="@style/dot_style" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>
+    
+
+    <TextView 
+        android:layout_below="@id/find_top"
+        android:id="@+id/find_tv_0"
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    
+	<ImageView
+	    android:id="@+id/find_divline_0"  
+        android:layout_width="fill_parent"  
+        android:layout_height="2dp"  
+        android:background="#ffffff"  
+        android:layout_below="@id/find_tv_0"
+        />   
+        
+	<!--  
+    <LinearLayout 
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/find_divline_0"
+        >
+	   <org.yanzi.ui.HorizontalListView
+	        android:id="@+id/horizon_listview"
+	        android:layout_width="match_parent"
+	        android:layout_height="200dip"
+	       android:layout_alignParentTop="true"
+	        >
+	    </org.yanzi.ui.HorizontalListView>	    
+	</LinearLayout>
+	-->
+    <RelativeLayout 
+        android:id="@+id/find_relativelayout_bussinessview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/find_divline_0"
+        >
+       <ImageView 
+           	android:id="@+id/find_iv_0"
+       		android:layout_alignParentLeft="true"
+       		android:layout_centerHorizontal="true"
+       		android:layout_marginTop="10dp"
+       		android:layout_marginLeft="5dp"
+       		android:layout_height="wrap_content"
+       		android:layout_width="wrap_content"  
+       		android:background="@drawable/left_go"   
+            />
+       <ImageView 
+	       android:layout_alignParentRight = "true"
+	       android:layout_marginTop="10dp"
+	       android:layout_marginRight="5dp"
+	       android:layout_centerHorizontal="true"
+	       android:id="@+id/find_iv_1"
+	       android:layout_width="wrap_content"
+	       android:layout_height="wrap_content"
+	       android:background="@drawable/right_go"
+	       />    
+	   <org.yanzi.ui.HorizontalListView
+	        android:id="@+id/horizon_listview"
+	        android:layout_width="0dp"
+	        android:layout_height="200dip"
+	        android:layout_marginLeft="5dp" 
+	        android:layout_marginRight="5dp"
+	        android:layout_toLeftOf="@id/find_iv_1"
+	        android:layout_toRightOf="@id/find_iv_0"
+	       	android:layout_alignParentTop="true"
+	        >
+	    </org.yanzi.ui.HorizontalListView>	    
+	</RelativeLayout>   
+	
+    <ImageView
+            android:id="@+id/find_div0"   
+        	android:layout_width="fill_parent"  
+        	android:layout_height="1dp"  
+        	android:background="?android:attr/listDivider"
+        	android:layout_below="@id/find_relativelayout_bussinessview"  
+        />	
+    
+    <RelativeLayout 
+        android:id="@+id/find_reativelayout_list"
+        android:layout_below="@id/find_relativelayout_bussinessview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"         
+        >
+	     
+        
+        <LinearLayout 
+            android:id="@+id/find_reativelayout_list_linear0"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentTop="true"
+            android:clickable="true"
+            >
+        
+	        <ImageView 
+	            android:id="@+id/find_list_nearby_icon"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentLeft="true"
+	            android:layout_centerVertical = "true"
+	            android:layout_marginLeft="20dp"
+	            android:layout_marginTop="0dp"
+	            android:background="@drawable/icon_cinema"
+	            />
+	        <TextView 
+	            android:id="@+id/find_list_nearby_tv"
+	            android:layout_toRightOf="@id/find_list_nearby_icon"
+	            android:layout_width="wrap_content"
+	            android:layout_height="fill_parent"
+	            android:gravity="center"
+
+	            android:text="查看附近的影院"
+	            />
+        </LinearLayout>
+	
+        <ImageView
+            android:id="@+id/find_list_div0"   
+        	android:layout_width="fill_parent"  
+        	android:layout_height="1dp"  
+        	android:background="?android:attr/listDivider"
+        	android:layout_below="@id/find_reativelayout_list_linear0"  
+        />
+        	
+		 <!-- 
+			<LinearLayout 
+	            android:id="@+id/find_reativelayout_list_linear1"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="horizontal"
+	            android:layout_below="@id/find_list_div0"            
+	            >
+		        <ImageView 
+		            android:id="@+id/find_list_search_icon"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentLeft="true"
+		            android:layout_marginLeft="20dp"
+		            android:layout_marginTop="5dp"
+		            android:background="@drawable/icon_cinema"
+		            />
+		        <TextView 
+		            android:id="@+id/find_list_search_tv"
+		            android:layout_toRightOf="@id/find_list_search_icon"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="查看附近的影院"
+		            />
+	        </LinearLayout>
+	        
+		    <ImageView
+	            android:id="@+id/find_list_div1"   
+	        	android:layout_width="fill_parent"  
+	        	android:layout_height="1dp"  
+	        	android:background="?android:attr/listDivider"
+	        	android:layout_below="@id/find_reativelayout_list_linear1"  
+	        />	
+			
+	        <LinearLayout 
+	            android:id="@+id/find_reativelayout_list_linear2"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="horizontal"           
+	            android:layout_below="@id/find_list_div1" 
+	            >
+		        <ImageView 
+		            android:id="@+id/find_list_plan_icon"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentLeft="true"
+		            android:layout_marginLeft="20dp"
+		            android:layout_marginTop="5dp"
+		            android:background="@drawable/icon_cinema"
+		            />
+		        <TextView 
+		            android:id="@+id/find_list_plan_tv"
+		            android:layout_toRightOf="@id/find_list_plan_icon"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="查看附近的影院"
+		            />
+	        </LinearLayout>
+	        -->
+	         
+       	<ImageView
+            android:id="@+id/find_list_div2"   
+        	android:layout_width="fill_parent"  
+        	android:layout_height="1dp"  
+        	android:background="?android:attr/listDivider"
+        	android:layout_below="@id/find_reativelayout_list_linear0"  
+        />	
+        
+    </RelativeLayout>
+        
+        
+</RelativeLayout>

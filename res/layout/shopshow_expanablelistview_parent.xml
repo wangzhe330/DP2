@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:layout_width="fill_parent"  
+    android:layout_height="wrap_content"  
+    android:background="@drawable/list_selector"  
+    android:orientation="horizontal"  
+    android:padding="5dip" >  
+  
+   	<ImageView       
+        android:id="@+id/shopshow_expanablelistview_parent_image"     
+        android:layout_width="100dip"  
+        android:layout_height="60dip"
+        android:src="@drawable/iamge_wait"
+        android:scaleType="fitXY"/>   
+      
+    <!-- 电影名-->  
+    <TextView  
+        android:id="@+id/shopshow_expanablelistview_parent_filmname"   
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/shopshow_expanablelistview_parent_image"
+        android:layout_toRightOf="@+id/shopshow_expanablelistview_parent_image"
+        android:textColor="#040404"  
+        android:layout_marginLeft="5dip"
+        android:typeface="sans"   
+        android:textSize="15sp"  
+        android:textStyle="bold"/>  
+        
+    <TextView
+        android:id="@+id/shopshow_expanablelistview_parent_filmcost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/shopshow_expanablelistview_parent_image"
+        android:layout_alignBottom="@+id/shopshow_expanablelistview_parent_image"
+        android:textColor="#040404"  
+        android:layout_marginLeft="5dip"
+        android:typeface="sans"   
+        android:textSize="15sp"  
+        android:textStyle="bold"/> 
+</RelativeLayout>  
